@@ -183,9 +183,6 @@ for selected_mrn in all_mrns:
             optimal_num_clusters = num_clusters
             max_silhouette_score = silhouette_avg
 
-    # Print the optimal number of clusters
-    print(f"Optimal Number of Clusters: {optimal_num_clusters}")
-
     # Set the number of clusters as the optimal number of clusters
     num_clusters = optimal_num_clusters
 
@@ -241,5 +238,3 @@ for selected_mrn in all_mrns:
         centroid_names = [centroid for centroid in centroid_names]
         file.write(",".join(centroid_names))
 
-    # Print a message indicating the file has been saved
-    print(f"Combined centroid vector saved to {output_file}")
